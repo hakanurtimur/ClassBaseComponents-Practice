@@ -5,6 +5,12 @@ import classes from './User.module.css';
 
 class User extends Component {
 
+
+  componentWillUnmount() {
+    console.log('Components unmounted!')
+    
+  }
+
   render() {
     return <li className={classes.user}>{this.props.name}</li>;
   }
